@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.content {
+    /*flex: 0 0 6%;*/
+    background: peachpuff;
+    border: 1px solid brown;
+    height: 100px;
+    width: 110px;
+}
+
+.replacedContent {
+    background: peachpuff;
+    border: 1px solid brown;
+    height: 100px;
+}
+
+
+.centeredbutton {
+  background: white;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
