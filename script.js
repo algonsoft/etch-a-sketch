@@ -21,12 +21,14 @@ click.forEach((button) => {
       if (size >= 1 && size <= 100 ){
         container.replaceChildren();
         let newWidth = 1760 / size;
+        let newHeight = 1600 / size
         
 
         for (i = 1; i <= size * size; i++) {   
           content = document.createElement('div');
           content.classList.add('content');
           content.style.width = newWidth + "px";
+          content.style.height = newHeight + "px";
           container.appendChild(content);
         }
        refreshedGrid();
@@ -66,16 +68,19 @@ function refreshedGrid(){
 let testtest  = document.querySelectorAll('.content')
 testtest.forEach((div) => {
   let newWidth = 1760 / size;
+  let newHeight = 1600 / size;
 
 function backgroundUpdate2(){
 div.style.cssText = "background-color: white";
 div.style.width = newWidth + "px";
+div.style.height = newHeight + "px";
 
 }
 
 function backgroundRevert2(){
 div.style.cssText = "background-color: peachpuff";
 div.style.width = newWidth + "px";
+div.style.height = newHeight + "px";
 
 }
 
